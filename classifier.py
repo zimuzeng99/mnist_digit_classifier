@@ -36,7 +36,7 @@ print(mndata.display(training_images[index]))
 print(training_labels[index])
 """
 
-nn = neural_network.NeuralNetwork([image_width * image_height, 200, 80, 10], 0.2)
+nn = neural_network.NeuralNetwork([image_width * image_height, 256, 128, 10], 0.2)
 
 nn.weights[0] = np.load("weights0.npy")
 nn.weights[1] = np.load("weights1.npy")
